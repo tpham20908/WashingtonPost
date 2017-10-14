@@ -22,8 +22,10 @@ body {
 
 /* Styling section element */
 section {
-  width: 67%;
+  width: 66.5%;
   float: left;
+  margin: 1.5% 0;
+  border-right: 1px solid #ccc;
 }
 
 section > div {
@@ -32,21 +34,25 @@ section > div {
 
 /* section daily */
 section #daily {
-  margin-bottom: 8px;
+  padding-bottom: 12px;
+  margin-right: 1em;
   border-bottom: 1px solid #ccc;
 }
 
 section #daily article {
   border-bottom: 1px solid #ccc;
-  padding: 1em 1em 1em 0;
+  padding-bottom: 1em;
 }
 
 section #daily article:nth-child(even) {
   border: none;
+  margin-top: 1em;
+  padding-bottom: 0;
 }
 
 section #daily div:first-child {
   float: left;
+  padding: 0 1em 0 0;
   width: 42%;
   border-right: 1px solid #ccc;
 }
@@ -88,7 +94,6 @@ section article .other-writting a {
   list-style-position: inside;
   font-weight: bold;
   font-size: 90%;
-  margin-bottom: 2em;
 }
 
 section #daily div a:hover {
@@ -103,15 +108,16 @@ section #daily div a {
 section #daily div:last-child {
   float: left;
   width: 58%;
+
 }
 
 section #daily div:last-child article {
-  padding-left: 1em;
+  margin-left: 1em;
+  padding-bottom: 1em;
 }
 
 section #daily div.image article:first-child {
   text-align: center;
-  margin: 0;
 }
 
 section #daily div.image img {
