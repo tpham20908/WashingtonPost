@@ -48,7 +48,6 @@ section #daily article:nth-child(even) {
 section #daily div:first-child {
   float: left;
   width: 42%;
-  padding-right: 1em;
   border-right: 1px solid #ccc;
 }
 
