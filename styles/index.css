@@ -74,7 +74,7 @@ section #daily div h2 {
   margin-bottom: 1em;
 }
 
-section #daily div h3 {
+div h3 {
   margin-bottom: 1em;
 }
 
@@ -84,7 +84,7 @@ section article .writting {
 }
 
 section article .author {
-  font-size: 90%;
+  font-size: 85%;
   margin-bottom: 8px;
 }
 
@@ -96,11 +96,11 @@ section article .other-writting a {
   font-size: 90%;
 }
 
-section #daily div a:hover {
+div a:hover {
   color: #6ac;
 }
 
-section #daily div a {
+div a {
   text-decoration: none;
   color: #000;
 }
@@ -139,54 +139,77 @@ section #daily div.image figcaption {
 
 /* class leading used global */
 div.leading {
-  background: #dac;
   height: 200px;
 
-  width: 19%;
-  margin-right: 1%;
+  width: 20%;
   float: left;
+  font-weight: bold;
+  font-size: 95%;
+}
+
+.leading hr {
+  width: 22%;
+  height: 4px;
+  background: #000;
+  margin-bottom: 8px;
+  border: none;
+}
+
+div.leading + div {
+  width: 80%;
+  float: left;
+}
+
+#opinion, #top-stories, #visual-stories{
+  padding: 1em 0;
+  margin-right: 1em;
+  border-bottom: 1px solid #ccc;
 }
 
 /* section opinion */
-section #opinion {
-  background: #bcc;
-
-  margin-bottom: 8px;
+#opinion div article {
+  width: 48.5%;
+  height: 35%;
+  float: left;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-bottom: 3%;
+  box-shadow: 0 2px 1px #ccc;
 }
 
+#opinion div article:nth-last-child(2),
+#opinion div article:nth-last-child(1) {
+  height: 24%;
+  margin-bottom: 0;
+}
 
-#opinion div.leading ~ div {
-  background: #edc;
-  height: 200px;
+#opinion div article:nth-child(odd) {
+  margin-right: 3%;
+}
 
-  width: 39%;
-  margin-right: 1%;
+#opinion div article img {
   float: left;
+  width: 20%;
+  margin: 3%;
+}
+
+#opinion div article div {
+  display: block;
+  width: 74%;
+  float: right;
+  margin: 3% auto;
 }
 
 
 /* section top-stories */
 section #top-stories {
   background: #eea;
-  margin-bottom: 8px;
-}
-
-#top-stories div.leading ~ div,
-#visual-stories div.leading ~ div {
-  background: #edc;
-  height: 200px;
-
-  width: 79%;
-  margin-right: 1%;
-  float: left;
 }
 
 
 /* section visual-story */
 section #visual-stories {
   background: #9ab;
-
-  margin-bottom: 8px;
 }
 
 
