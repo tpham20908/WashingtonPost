@@ -618,7 +618,53 @@ aside .most-read {
 
 .diversions div:last-child p:first-child::before {
   content: url("../images/comic.png");
+  position: relative;
+  top: 4px;
 }
+
+.diversions div:last-child p:nth-child(2)::before {
+  content: url("../images/eggs.png");
+  position: relative;
+  top: 4px;
+}
+
+.diversions div:last-child p:nth-child(3)::before {
+  content: url("../images/crossword.png");
+  position: relative;
+  top: 4px;
+}
+
+.diversions div:last-child p:nth-child(4)::before {
+  content: url("../images/horoscopes.png");
+  position: relative;
+  top: 4px;
+}
+
+.diversions div:last-child p:nth-child(5)::before {
+  content: url("../images/mahjongg.png");
+  position: relative;
+  top: 4px;
+}
+
+.diversions div:last-child p:nth-child(6)::before {
+  content: url("../images/solitaire.png");
+  position: relative;
+  top: 4px;
+}
+
+.diversions div:last-child p:nth-child(7)::before {
+  content: url("../images/sudoku.png");
+  position: relative;
+  top: 4px;
+}
+
+.diversions div:last-child p:last-child::before {
+  content: url("../images/tv.png");
+  position: relative;
+  top: 4px;
+}
+
+
 
 
 /* TP ends */
