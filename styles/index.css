@@ -138,7 +138,7 @@
 }
 
 body {
-  background: #eee;
+  background: #f8f8f5;
   font-family: "FranklinITCProLight","Helvetica Neue Light","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
 }
 
@@ -158,7 +158,7 @@ section {
 }
 
 section > div {
-  overflow: hidden;
+  overflow: auto;
 }
 
 /* section daily */
@@ -170,12 +170,16 @@ section #daily {
 
 section #daily article {
   border-bottom: 1px solid #ccc;
+  margin-top: 1em;
   padding-bottom: 1em;
 }
 
-section #daily article:nth-child(even) {
+section #daily div article:first-child {
+  margin-top: 0;
+}
+
+section #daily div article:last-child {
   border: none;
-  margin-top: 1em;
   padding-bottom: 0;
 }
 
@@ -186,13 +190,13 @@ section #daily div:first-child {
   border-right: 1px solid #ccc;
 }
 
-section #daily div .topic {
+section div .topic {
   font-weight: bold;
   font-size: 80%;
   margin-bottom: 8px;
 }
 
-section #daily div .topic span {
+section div .topic span {
   font-weight: 300;
 }
 
@@ -331,14 +335,47 @@ div.leading + div {
 
 
 /* section top-stories */
-section #top-stories {
-  background: #eea;
+section #top-stories article {
+  padding-bottom: 1em;
+  margin-top: 1em;
+  border-bottom: 1px solid #ccc;
+  overflow: auto;
+}
+
+section #top-stories article:first-child {
+  margin-top: 0;
+}
+
+section #top-stories article:last-child {
+  border: none;
+  padding-bottom: 0;
+}
+
+#top-stories div article img {
+  width: 35%;
+  float: left;
+}
+
+#top-stories div article div h3 {
+  font-size: 130%;
+}
+
+#top-stories div article div {
+  width: 65%;
+  display: block;
+  float: right;
+  padding-left: 1.5em;
 }
 
 
 /* section visual-story */
 section #visual-stories {
-  background: #9ab;
+  overflow: auto;
+}
+
+section #visual-stories article {
+  width: 49%;
+  float: left;
 }
 
 
