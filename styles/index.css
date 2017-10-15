@@ -332,8 +332,6 @@ section #daily div.image figcaption {
 
 /* class leading used global */
 div.leading {
-  height: 200px;
-
   width: 20%;
   float: left;
   font-weight: bold;
