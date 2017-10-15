@@ -366,6 +366,7 @@ div.leading + div {
   width: 48.5%;
   height: 35%;
   float: left;
+  background: #fff;
   border: 1px solid #ddd;
   border-radius: 3px;
   margin-bottom: 3%;
@@ -461,11 +462,164 @@ section #visual-stories article figure {
 
 /* Styling aside element */
 aside {
-  width: 32%;
-  background: #999;
-  height: 900px;
+  width: 30%;
   display: inline-block;
+  margin-left: 2%;
 }
+
+aside section {
+  width: 100%;
+  border-right: none;
+  padding-top: 1em;
+}
+
+aside section:first-child,
+aside section:last-child {
+  border-bottom: 1px solid #ccc;
+}
+
+div.title {
+  width: 35%;
+  font-weight: bold;
+  font-size: 95%;
+  margin-bottom: 1em;
+}
+
+.title hr {
+  width: 30%;
+  height: 4px;
+  background: #000;
+  margin-bottom: 8px;
+  border: none;
+}
+
+aside section figure {
+  text-align: center;
+}
+
+aside section figure figcaption {
+  text-align: left;
+  opacity: 0.5;
+  font-size: 80%;
+  padding-bottom: 1em;
+}
+
+aside .up-next {
+  /*border-bottom: 1px solid #ccc;*/
+}
+
+.up-next .title p {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.up-next .content article {
+  overflow: auto;
+  padding: 1em 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.up-next .content img {
+  width: 35%;
+  float: left;
+}
+
+.up-next .content h3 {
+  width: 65%;
+  display: block;
+  float: right;
+  padding-left: 1em;
+}
+
+aside .most-read {
+  border-bottom: 1px solid #ccc;
+}
+
+.most-read div:last-child {
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 2px #ccc;
+}
+
+.most-read div ol {
+  padding-left: 2em;
+}
+
+.most-read div ol li {
+  margin: 1em 1em 0 0;
+  padding-bottom: 1em;
+  float: right;
+  border-bottom: 1px solid #ccc;
+}
+
+.most-read div ol li:last-child {
+  border: none;
+}
+
+.most-read div ol li img {
+  width: 20%;
+  float: right;
+}
+
+.most-read div ol li p {
+  width: 80%;
+  float: right;
+  padding-right: 1em;
+}
+
+.todays-paper {
+  position: relative;
+}
+
+.todays-paper div:last-child {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.todays-paper div:last-child div {
+  width: 100%;
+  background: #fff;
+}
+
+.todays-paper div:last-child div p {
+  padding: 1em;
+  margin: 0 1em;
+}
+
+.todays-paper div:last-child div p:first-child {
+  border-bottom: 1px solid #ccc;
+}
+
+.todays-paper div:last-child img {
+  position: absolute;
+  bottom: 0;
+  right: 1em;
+}
+
+.diversions div:last-child {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+.diversions div:last-child p {
+  width: 50%;
+  float: left;
+  padding: 1em 1em 0 1em;
+  font-size: 90%;
+}
+
+.diversions div:last-child p:last-child,
+.diversions div:last-child p:nth-last-child(2) {
+  margin-bottom: 1em;
+}
+
+.diversions div:last-child p:first-child::before {
+  content: url("../images/comic.png");
+}
+
 
 /* TP ends */
 
