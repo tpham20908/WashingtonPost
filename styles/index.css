@@ -318,9 +318,9 @@ section div .topic span {
   font-weight: 300;
 }
 
-section #daily div h2 {
+section #daily div h2 a {
   font-family: "PostoniWide",Georgia,serif;
-  font-size: 1.8em;
+  font-size: 1em;
   font-weight: 600;
   margin-bottom: 1em;
 }

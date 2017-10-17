@@ -5,46 +5,55 @@
   <meta name="The Washington Post Clone" content="The Washington Post Clone">
   <link rel="stylesheet" type="text/css" href="styles/article.css">
   <link rel="shortcut icon" href="images/wp.png" />
+  <script src="https://use.fontawesome.com/ada1feb64d.js"></script> <!-- font awesome embeded code, needed for icons -->
   <title>The Washington Post Clone</title>
 </head>
 
 
 <body>
-  <div class="mainWrapper">
-    <nav class="topNav">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Politics</a></li>
-        <li><a href="#">Sports</a></li>
-        <li><a href="#">World</a></li>
-        <li><a href="#">Local</a></li>
-        <li class="searchLi"><input type="text" name="search" placeholder="Search.." class="searchBox">
-      </ul>
-    </nav>
+      <div class="navWrapper">
+        <nav class="topNav">
+
+            <div class="navLeftBtns">
+                <!-- for the search and menu buttons -->
+                <ul>
+                    <li class="nav-btn-li"><a href="#"><i class="fa fa-search"></i></a></li>
+                    <li class="nav-btn-li"><a href="#" class="nav-drop-btn">Sections <i class="fa fa-bars"></i></a></li>
+                </ul>
+            </div> <!-- end of buttons div -->
+            <div>
+                <ul>
+                    <li><a href="#">Politics</a></li>
+                    <li><a href="#">Opinion</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Local</a></li>
+                    <li><a href="#">National</a></li>
+                    <li><a href="#">World</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Tech</a></li>
+                    <li><a href="#">Lifestyle</a></li>
+                </ul>
+            </div>
+
+            <div class="navRightBtns">
+                <ul>
+                    <li class="nav-btn-li"><a href="sign-in.html">Sign In <i class="fa fa-user" aria-hidden="true"></i></a></li>
+                    <li class="nav-btn-li"><a href="subscribe.html">Subscribe</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </div> <!-- End of nav wrapper -->
 
     <header class="topHeader">
-      <h1 class="companyName">The MTL News Network</h1>
+        <h1 class="companyName">The Washington Post &trade; Clone</h1>
+        <div class="headerContainer">
+            <h4 class="moto">Democracy Dies in Darkness</h4>
+            <p class="topDate">Updated October 14th, 2017</p>
+            <p class="edition">Edition:U.S. &amp;World | Regional</p>
+        </div>
 
-      <div class="headerContainer">
-        <h4 class="moto">Where fake news become true facts</h4>
-        <p class="topDate">Updated October 14th, 2017</p>
-        <p class="edition">MTL edition</p>
-      </div>
-
-      <div class="articleList">
-        <ul>
-          <li><a href="#">Article</a></li>
-          <li><a href="#">Article</a></li>
-          <li><a href="#">Article</a></li>
-          <li><a href="#">Article</a></li>
-          <li><a href="#">Article</a></li>
-          <li><a href="#">Article</a></li>
-        </ul>
-      </div>
-      <hr />
     </header>
-  </div>
-
 
 
 <!-- Tung's Beginning -->
@@ -386,25 +395,48 @@
 
 
 <!-- Chris starts -->
-  <footer>
-    <h2 class="companyNameFooter">The MTL News Network</h2>
-    <p class="footerHome"><a href="#h1">Back to home page</a></p>
-    <nav class="footerNav">
-      <ul>
-        <li><a href="#">Subscribe</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Legal</a></li>
-      </ul>
-    </nav>
+<footer class="footer">
 
-    <div class="socialLinks">
-      <a href="#"><img src="images/youtube.jpg" alt="youtube" title="Youtube" /></a>
-      <a href="#"><img src="images/facebook.png" alt="facebook" title="Facebook" /></a>
-      <a href="#"><img src="images/twitter.png" alt="twitter" title="Twitter" /></a>
-      <a href="#"><img src="images/instagram.jpg" alt="instagram" title="Instagram" /></a>
+  <div class="topFooter">
+
+    <div class="footer-left-btns-container">
+      <!-- div for left buttons -->
+      <a href="#" class="footer-btn fa fa-facebook"></a>
+      <a href="#" class="footer-btn fa fa-twitter"></a>
+      <a href="#" class="footer-btn fa fa-instagram"></a>
+      <a href="#" class="footer-btn">Archives</a>
+    </div> <!-- end of left buttons div -->
+
+    <span class="footerCopyright">washingtonpost.com &copy; 1996-2017 The Washington Post</span>
+
+    <div class="footer-right-btns-container">
+      <!-- div for right buttons -->
+      <a href="subscribe.html" class="footer-btn"><strong>Subscribe</strong></a>
+      <a href="sign-in.html" class="footer-btn"><strong>Sign In</strong></a>
     </div>
-  </footer>
+  </div>
+
+  <table class="footer-table">
+    <tr>
+      <th>Terms of Use</th>
+      <th>Get Us</th>
+      <th>Contact Us</th>
+      <th>About Us</th>
+    </tr>
+    <tr>
+      <td><a href="#">Digital Products Terms of Sale</a></td>
+      <td><a href="#">Home delivery</a></td>
+      <td><a href="#">Help &amp; Contact Info</a></td>
+      <td><a href="#">In the Community</a></td>
+    </tr>
+    <tr>
+      <td><a href="#">Print Products Terms of Sale</a></td>
+      <td><a href="#">Digital Subscription</a></td>
+      <td><a href="#">Reader Representative</a></td>
+      <td><a href="#">Careers</a></td>
+    </tr>
+  </table>
+</footer>
 <!-- Chris ends -->
 </body>
 </html>
