@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 
 /*
   CSS for article.html Web page
@@ -8,189 +8,233 @@
 
 /* styles for the top nav bar */
 
-.topNav {
-  width: 100%;
-  background-color: #0A0A0A;
-  font-family: Helvetica;
+.navWrapper {
+    width: 100%;
+    background-color: #0A0A0A;
+    font-family: Helvetica;
+    font-size: 14px;
+    margin-bottom: 3em;
+    overflow: auto;
 }
 
-.topNav ul {
-  list-style-type: none;
-  text-align: center;
+.topNav {
+    position: fixed;
+    z-index: 100;
+    background-color: black;
+    width: 100%;
 }
+
+    .topNav ul {
+        list-style-type: none;
+    }
+
+.navLeftBtns {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: center;
+    padding-left: 1.5em;
+    float: left;
+}
+
+    .navLeftBtns + div {
+        display: inline-block;
+    }
 
 .topNav ul li {
-  display: inline-block;
-  width: 10%;
-  padding: 0.5em;
-  border-right: 1px solid white;
+    display: inline-block;
+    padding: 0.5em;
+    margin: 0.5em;
 }
 
-.topNav ul li:first-child {
-  border-left: 1px solid white;
+
+    .topNav ul li a {
+        display: block;
+        color: gainsboro;
+        text-decoration: none;
+    }
+
+        .topNav ul li a:hover {
+            color: white;
+        }
+
+.navRightBtns {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: center;
+    padding-right: 1.5em;
+    float: right;
 }
 
-.topNav ul li a {
-  display: block;
-  color: gainsboro;
-  text-decoration: none;
-}
-
-.topNav ul li a:hover {
-  color: white;
-}
-
-/* placeholder search box */
-
-.searchLi {
-  border-right: initial !important;
-}
-
-.searchBox {
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+.nav-btn-li {
+    background-color: rgb(68,68,68);
+    border: 1px solid rgb(68,68,68);
+    border-radius: 4px;
+    margin-left: 0.1em !important;
+    margin-right: 0.1em !important;
 }
 
 /* end of nav styles */
 
 /* styles for the header part, C.D */
 
-.mainWrapper {
-  width: 90%;
-  margin: 0 auto;
-}
-
 .topHeader {
-  width: 100%;
-  margin: 0 auto;
+    width: 90%;
+    margin: 65px auto 0 auto;
 }
 
 .companyName {
-  font-family: Arial; /* embeded font here - 'Rye', cursive; */
-  text-align: center;
+    font-family: Arial; /* embeded font here - 'Rye', cursive; */
+    text-align: center;
 }
 
 .headerContainer {
-  font-family: Georgia,serif;
-  text-align: center;
-  width: 100%;
-  border-bottom: 3px solid gray;
-  margin: 0;
-  padding: 0;
-  overflow: auto;
+    font-family: Georgia,serif;
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 3px solid black;
+    padding-top: 2em;
+    padding-bottom: 0.4em;
+    overflow: auto;
 }
 
 .moto {
-  display: inline;
-  width: 25%;
-  vertical-align: middle;
-  font-style: italic;
-
+    display: inline;
+    width: 25%;
+    vertical-align: middle;
+    font-style: italic;
 }
 
 .topDate {
-  float: left;
-  display: inline;
-  vertical-align: middle;
-  margin: 0;
-  padding: 0;
-  width: 20%;
+    float: left;
+    display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 20%;
 }
 
 .edition {
-  display: inline;
-  float: right;
-  margin: 0;
-  padding: 0;
-  width: 20%;
+    display: inline;
+    float: right;
+    margin: 0;
+    padding: 0;
+    width: 20%;
 }
 
 /* styles for the article nav below the header */
 
+.redText {
+    color: red;
+}
+
 .articleList {
-  width: 100%;
-  margin: 0.5em auto;
+    width: 100%;
+    margin: 0.5em auto;
 }
 
-.articleList ul {
-  list-style-type: none;
-  padding: 0.5em;
-  margin: 0;
-}
+    .articleList ul {
+        list-style-type: none;
+        padding: 0.5em;
+        margin: 0;
+    }
 
-.articleList ul li {
-  display: inline-block;
-  width: 5%;
-  padding: 0.5em;
-}
+        .articleList ul li {
+            display: inline-block;
+            padding: 0.5em;
+        }
 
-.articleList ul li a {
-  display: block;
-  color: rgb(42, 42, 42);
-  text-decoration: none;
-}
+            .articleList ul li a {
+                display: block;
+                color: rgb(42, 42, 42);
+                text-decoration: none;
+            }
 
-.articleList ul li a:hover {
-  color: #3F9AD9;
-}
+                .articleList ul li a:hover {
+                    color: #3F9AD9;
+                }
+
+
 /* end of header styles */
 
 /* start of footer styles */
 
-footer {
-  clear: both;
-  background-color: #4C4C4C;
-  font-family: Georgia;
+/* styles for top part of the footer */
+
+footer.footer {
+    clear: both;
+    width: 100%;
 }
 
-footer h2 {
-  color: gainsboro;
-  width: 45%;
-  display: inline-block;
-  text-align: left;
-  padding-left: 16px;
+.topFooter {
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    text-align: center;
+    position: relative;
 }
 
-.footerHome {
-  display: inline-block;
-  width: 45%;
-  text-align: right;
-  padding-right: 16px;
+.footer-left-btns-container {
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+    top: 12.5%;
+    margin-left: 1em;
+    padding: 8px;
+    background-color: white;
 }
 
-.footerHome a {
-  display: block;
-  color: gainsboro;
+.footer-btn {
+    display: inline;
+    vertical-align: middle;
+    font-size: 14px;
+    margin-right: 4px;
+    border-right: 2px solid #dedede;
+    padding-right: 4px;
 }
 
-footer a {
-  text-decoration: none;
+.footer-btn:last-child {
+    border:none;
 }
 
-footer ul {
-  list-style-type: none;
-  text-align: center;
+.footerCopyright {
 }
 
-footer ul li {
-  display: inline-block;
-  width: 20%;
-
+.footer-right-btns-container {
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    font-size: 1.5em;
+    padding: 8px;
+    background-color: white;
+    margin-right: 1em;
+    position: absolute;
+    right: 0;
+    top: 12.5%;
 }
 
-footer ul li a {
-  display: block;
-  color: gainsboro;
-  padding-bottom: 0;
+
+/* styles for bottom part of the footer */
+
+table.footer-table {
+    text-align: left;
+    width: 80%;
+    margin: 2% auto;
 }
 
-.socialLinks {
-  text-align: center;
+.footer-table a {
+    text-decoration: none;
 }
 
-.socialLinks img {
-  margin: 0;
-  padding: 0 10px 10px 10px;
+.footer-table th, td, a {
+    font-size: 14px;
+    color: #2a2a2a;
+}
+
+.footer-table a:hover {
+    color: #6ac;
 }
 
 /* TP is from here */
@@ -683,38 +727,37 @@ aside .most-read {
 
 /* Jian -> */
 #subCategory {
-  width: 90%;
-  height: 2160px;
-  margin: 0 auto;
-  padding: 0;
-  clear: both;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    clear: both;
 }
 
-#subCategory div {
-  width: 260px;
-  height: 700px;
-  margin-top: 0;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  display: inline-block;
-  background-color: #fff;
-  border: 1px solid #eaeaea;
-  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
-  border-radius: 5px;
-  float: left;
-}
+    #subCategory div {
+        width: 260px;
+        height: 700px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        display: inline-block;
+        background-color: #fff;
+        border: 1px solid #eaeaea;
+        box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+        border-radius: 5px;
+        float: left;
+    }
 
-#subCategory div img {
-  width: 259px;
-  height: 150px;
-}
+        #subCategory div img {
+            width: 259px;
+            height: 150px;
+        }
 
-#subCategory div h3, h4 {
-  margin: 20px;
-}
+        #subCategory div h3, h4 {
+            margin: 20px;
+        }
 
-#subCategory div h4:not(:last-child) {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #d5d5d5;
-}
+        #subCategory div h4:not(:last-child) {
+            padding-bottom: 20px;
+            border-bottom: 1px solid #d5d5d5;
+        }
 /* Jian <- */
