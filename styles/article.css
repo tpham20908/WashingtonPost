@@ -205,103 +205,28 @@ footer ul li a {
 }
 
 body {
-  background: #f8f8f5;
+  background: #fff;
   font-family: "FranklinITCProLight","Helvetica Neue Light","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
 }
 
-iframe {
-  width: 360px;
-  height: 200px;
-  border: none;
-  overflow: auto;
-}
-
 #upper-main {
-  width: 90%;
+  width: 80%;
   margin: 2em auto;
-  border-top: 1px solid #ccc;
 }
 
-
-/* Styling section element */
-section {
-  width: 66.5%;
-  float: left;
-  margin: 1.5% 0;
-  border-right: 1px solid #ccc;
-}
-
-section > div {
-  overflow: auto;
-}
-
-/* section daily */
-section #daily {
-  padding-bottom: 12px;
-  margin-right: 1em;
+#upper-main header {
   border-bottom: 1px solid #ccc;
 }
 
-section #daily article {
-  border-bottom: 1px solid #ccc;
-  margin-top: 1em;
-  padding-bottom: 1em;
-}
-
-section #daily div article:first-child {
-  margin-top: 0;
-}
-
-section #daily div article:last-child {
-  border: none;
-  padding-bottom: 0;
-}
-
-section #daily div:first-child {
-  float: left;
-  padding: 0 1em 0 0;
-  width: 42%;
-  border-right: 1px solid #ccc;
-}
-
-section div .topic {
+#upper-main header a {
   font-weight: bold;
-  font-size: 80%;
-  margin-bottom: 8px;
+  color: #76f;
 }
 
-section div .topic span {
-  font-weight: 300;
-}
-
-section #daily div h2 {
-  font-family: "PostoniWide",Georgia,serif;
-  font-size: 1.8em;
-  font-weight: 600;
-  margin-bottom: 1em;
-}
-
-div h3 {
-  margin-bottom: 1em;
-  font-size: 110%;
-}
-
-section article .writting {
-  font-size: 95%;
-  margin-bottom: 8px;
-}
-
-section article .author {
-  font-size: 85%;
-  margin-bottom: 8px;
-}
-
-section article .other-writting a {
-  display: list-item;
-  list-style-type: disc;
-  list-style-position: inside;
-  font-weight: bold;
-  font-size: 90%;
+#upper-main header h1 {
+  font-size: 3em;
+  padding-bottom: 0.5em;
+  color: #4c4c4c;
 }
 
 div a:hover {
@@ -313,171 +238,110 @@ div a {
   color: #000;
 }
 
-section #daily div:last-child {
+section iframe {
+  width: 640px;
+  height: 360px;
+  border: none;
+}
+
+
+/* Styling section element */
+section {
+  width: 61.5%;
   float: left;
-  width: 58%;
-
+  margin: 1.5% 0;
+  padding-right: 2em;
+  border-right: 1px solid #ccc;
 }
 
-section #daily div:last-child article {
-  margin-left: 1em;
-  padding-bottom: 1em;
-}
-
-section #daily div.image article:first-child {
+section figure {
+  margin-bottom: 1.5em;
   text-align: center;
 }
 
-section #daily div.image img {
-  max-width: 100%;
-}
-
-section #daily div.image article > a > img {
-  max-width: 50%;
-  float: right;
-  margin-left: 1em;
-}
-
-section #daily div.image figcaption {
-  text-align: left;
-  opacity: 0.5;
-  font-size: 80%;
-}
-
-
-/* class leading used global */
-div.leading {
-  width: 20%;
-  float: left;
-  font-weight: bold;
+section figure figcaption {
   font-size: 95%;
+  width: 95%;
+  margin: 0 auto;
+  opacity: 0.7;
+  text-align: left;
 }
 
-.leading hr {
-  width: 22%;
-  height: 4px;
-  background: #000;
-  margin-bottom: 8px;
-  border: none;
+p.authors {
+  font-weight: bold;
+  margin-bottom: 1.5em;
 }
 
-div.leading + div {
-  width: 80%;
-  float: left;
+p.authors a {
+  color: #76f;
 }
 
-#opinion, #top-stories, #visual-stories{
-  padding: 1em 0;
-  margin-right: 1em;
-  border-bottom: 1px solid #ccc;
-}
-
-#visual-stories {
-  border: none;
-}
-
-/* section opinion */
-#opinion div article {
-  width: 48.5%;
-  height: 35%;
-  float: left;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  margin-bottom: 3%;
-  box-shadow: 0 2px 1px #ccc;
-}
-
-#opinion div article:nth-last-child(2),
-#opinion div article:nth-last-child(1) {
-  height: 24%;
-  margin-bottom: 0;
-}
-
-#opinion div article:nth-child(odd) {
-  margin-right: 3%;
-}
-
-#opinion div article img {
-  float: left;
-  width: 20%;
-  margin: 3%;
-}
-
-#opinion div article div {
-  display: block;
-  width: 74%;
-  float: right;
-  margin: 3% auto;
-}
-
-
-/* section top-stories */
-section #top-stories article {
-  padding-bottom: 1em;
-  margin-top: 1em;
-  border-bottom: 1px solid #ccc;
-  overflow: auto;
-}
-
-section #top-stories article:first-child {
-  margin-top: 0;
-}
-
-section #top-stories article:last-child {
-  border: none;
-  padding-bottom: 0;
-}
-
-#top-stories div article img {
-  width: 35%;
-  float: left;
-}
-
-#top-stories div article div h3 {
-  font-size: 130%;
-}
-
-#top-stories div article div {
-  width: 65%;
-  display: block;
-  float: right;
-  padding-left: 1.5em;
-}
-
-
-/* section visual-story */
-section #visual-stories {
-  overflow: auto;
-}
-
-section #visual-stories article {
-  width: 49%;
-  float: left;
-}
-
-section #visual-stories article:nth-child(odd) {
-  margin-right: 2%;
-}
-
-section #visual-stories article img {
-  max-width: 100%;
-}
-
-section #visual-stories article figcaption {
-  font-size: 90%;
+p.authors span {
+  font-weight: normal;
+  font-size: 80%;
   opacity: 0.7;
 }
 
-section #visual-stories article figure {
-  margin-bottom: 1em;
+p.authors::after {
+  content: url("../images/mail.png");
+  position: relative;
+  top: 4px;
 }
 
+.writting p {
+  line-height: 200%;
+  font-size: 110%;
+}
+
+div > em {
+  display: block;
+  margin-bottom: 2em;
+}
+
+div.comments {
+  padding: 0.5em 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 35%;
+  text-align: center;
+  float: left;
+  font-weight: bold;
+}
+
+div.comments a::before {
+  content: url("../images/comments.png");
+  position: relative;
+  top: 4px;
+}
+
+div.media {
+  width: 40%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  float: right;
+}
+
+div.media div {
+  width: 33.3%;
+  margin: 0.6em auto;
+  float: left;
+  text-align: center;
+  border-right: 1px solid #ccc;
+}
+
+div.media div:last-child {
+  border: none;
+}
+
+.email a img {
+  position: relative;
+  top: 4px;
+}
 
 
 /* Styling aside element */
 aside {
-  width: 30%;
+  width: 35%;
   display: inline-block;
   margin-left: 2%;
 }
@@ -491,6 +355,12 @@ aside section {
 aside section:first-child,
 aside section:last-child {
   border-bottom: 1px solid #ccc;
+}
+
+aside iframe {
+  width: 360px;
+  height: 200px;
+  border: none;
 }
 
 div.title {
@@ -517,6 +387,10 @@ aside section figure figcaption {
   opacity: 0.5;
   font-size: 80%;
   padding-bottom: 1em;
+}
+
+aside .up-next {
+  /*border-bottom: 1px solid #ccc;*/
 }
 
 .up-next .title p {
